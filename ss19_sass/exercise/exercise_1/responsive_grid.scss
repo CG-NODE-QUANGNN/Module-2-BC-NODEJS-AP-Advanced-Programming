@@ -1,0 +1,60 @@
+$box-sizing: border-box;
+
+* {
+  box-sizing: $box-sizing;
+}
+
+.gridwrapper {
+  overflow: auto;
+  position: relative;
+  height: 250px;
+}
+
+.gridcontent {
+  width: 8.33%;
+  margin: 0;
+  border-right: 1px solid grey;
+  height: 100%;
+  float: left;
+  background-color: #84c754;
+  background-color: #f1f1f1;
+}
+
+.container {
+  position: absolute;
+  opacity: 0.9;
+  width: auto;
+  left: 8px;
+  right: 10px;
+
+  .gridcontainer {
+    .gridwrapper {
+      height: 90px;
+
+      .gridcontent {
+        background-color: #ffffff;
+        border: none;
+
+        div {
+          background-color: #33b5e5;
+          border: none;
+          width: 100%;
+          height: 15%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.gridcontainer {
+  .gridwrapper {
+    height: 370px;
+
+    .gridcontent {
+      background-color: #ffffff;
+      border-right: 1px solid #000000;
+      border-left: 1px solid #000000;
+    }
+  }
+}
